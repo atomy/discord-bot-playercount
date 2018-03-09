@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  discord-bot:
+    build: .
+    environment:
+      - DISCORD_API_KEY=kk23k42342
+      - STEAM_API_KEY=k43jlj2k342
+      - STEAM_APPID=12345
+    volumes:
+      - ./bot.js:/app/bot.js

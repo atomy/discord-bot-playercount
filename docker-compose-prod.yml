@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  discord-bot:
+    image: #IMAGE_NAME#
+    restart: always
+    environment:
+      - DISCORD_API_KEY=#DISCORD_API_KEY#
+      - STEAM_API_KEY=#STEAM_API_KEY#
+      - STEAM_APPID=#STEAM_APPID#
