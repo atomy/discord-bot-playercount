@@ -24,7 +24,7 @@ const steamAppId = process.env.STEAM_APPID;
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`);
-    client.user.setActivity('? playerz playing.', { url: 'http://www.dystopia-game.com', type: 'WATCHING' } );
+    client.user.setActivity('? players playing.', { url: 'http://www.dystopia-game.com', type: 'WATCHING' } );
     request(options, callback);
 });
 
