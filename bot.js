@@ -41,8 +41,8 @@ function callback(error, response, body) {
         console.log("retrieved player count is: " + playerCount);
     }
 
-    if (!error && response.statusCode == 200 && playerCount > 0) {
-        client.user.setActivity(playerCount + ' playerz playing', { url: 'http://www.dystopia-game.com', type: 'WATCHING' } );
+    if (!error && response.statusCode == 200 && playerCount >= 0) {
+        client.user.setActivity(playerCount + ' players playing', { url: 'http://www.dystopia-game.com', type: 'WATCHING' } );
     } else {
         client.user.setActivity('? players playing', { url: 'http://www.dystopia-game.com', type: 'WATCHING' } );
     }
