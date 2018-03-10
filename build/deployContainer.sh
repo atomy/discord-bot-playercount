@@ -43,7 +43,6 @@ function prepareCompose() {
     sed -i "s~#DISCORD_API_KEY#~${DISCORD_API_KEY}~" docker-compose-prod.yml
     sed -i "s~#STEAM_API_KEY#~${STEAM_API_KEY}~" docker-compose-prod.yml
     sed -i "s~#STEAM_APPID#~${STEAM_APPID}~" docker-compose-prod.yml
-    sed -i "s~#IMAGE_NAME#~${REGISTRY_ADDRESS}/${CONTAINER_NAME}~" docker-compose-prod.yml
 }
 
 function shutdownContainer() {

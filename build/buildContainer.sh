@@ -17,16 +17,11 @@ function validateEnv() {
 # build container
 function buildContainer() {
     echo "Building Container..."
-    docker build -t ${CONTAINER_NAME}:latest .
-    docker tag ${CONTAINER_NAME}:latest ${REGISTRY_ADDRESS}/${CONTAINER_NAME}:latest
+    docker build -t atomy/discord-bot:latest .
     echo "Building PHP Container... DONE"
 }
 
 validateEnv
 buildContainer
-
-echo "Pushing all containers..."
-docker push ${REGISTRY_ADDRESS}/${CONTAINER_NAME}:latest
-echo "Pushing all containers... DONE"
 
 echo "ALL DONE"

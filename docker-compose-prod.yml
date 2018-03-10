@@ -2,7 +2,7 @@ version: "3"
 
 services:
   discord-bot:
-    image: #IMAGE_NAME#
+    image: atomy/discord-bot
     restart: always
     environment:
       - DISCORD_API_KEY=#DISCORD_API_KEY#
