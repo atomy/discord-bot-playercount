@@ -29,7 +29,7 @@ client.on('ready', () => {
 });
 
 const options = {
-    url: 'https://partner.steam-api.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?key=' + steamApiKey + '&appid=' + steamAppId
+    url: 'https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?key=' + steamApiKey + '&appid=' + steamAppId
 };
 
 function callback(error, response, body) {
