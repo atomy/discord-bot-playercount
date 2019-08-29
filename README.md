@@ -1,5 +1,5 @@
 # Introduction 
-Discord bot that includes the current playercount of a steam game in its present.
+Discord bot that includes the current playercount of a steam game in its presence.
 
 # Requirements
 - API key for Steam
